@@ -3,9 +3,15 @@ package client
 import (
 	"fmt"
 	"testing"
+
+	mock "gopkg.in/h2non/gentleman-mock.v2"
 )
 
 func createClient(t *testing.T) Client {
+	defer mock.Disable()
+	// Configure the mock via gock
+	mock.New("127.0.0.1:8200").Get("/*").Reply(204).SetHeader("Server", "gock")
+
 	var token = "6aeec159-592b-a807-ac54-3060f204116c"
 	var path = "127.0.0.1:8200"
 	client, err := NewClient(token, path)
