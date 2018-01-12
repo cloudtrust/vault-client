@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.org/cloudtrust/vault-client.svg?branch=master)](https://travis-ci.org/cloudtrust/vault-client)
+[![Coverage Status](https://coveralls.io/repos/github/cloudtrust/vault-client/badge.svg?branch=master)](https://coveralls.io/github/cloudtrust/vault-client?branch=master)
+ [![Go Report Card](https://goreportcard.com/badge/github.com/cloudtrust/vault-client)](https://goreportcard.com/report/github.com/cloudtrust/vault-client)
 # vault-client
 
 Vault client is a client that can:
