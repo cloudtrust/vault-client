@@ -21,5 +21,6 @@ func (c *client) CreatePolicy(path string, role string, policyName string) error
 	if err != nil {
 		return err
 	}
+
 	return nil
 }

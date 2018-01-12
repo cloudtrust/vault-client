@@ -10,6 +10,7 @@ func (c *client) CreateToken(policyName string) (string, error) {
 	if err != nil {
 		return "", err
 	}
+
 	newToken := secret.Auth.ClientToken
 	return newToken, nil
 
